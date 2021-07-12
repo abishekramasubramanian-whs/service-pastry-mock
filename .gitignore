@@ -1,0 +1,17 @@
+logs
+*.log
+npm-debug.log*
+
+node_modules/
+deployments/compiled/
+.git
+
+.idea
+*.iml
+.vscode
+.DS_Store
+
+# Swagger doc
+foo.json
+
+CertificateAuthorityCertificate.pem

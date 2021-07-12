@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ inventory.parameters.name }}
+  namespace: {{ inventory.parameters.namespace }}
+  labels:
+    app: {{ inventory.parameters.name }}
+    subsystem: {{ inventory.parameters.subsystem }}
+spec:
+  ports:
+    - name: https
+      port: 1080
+  selector:
+    app: {{ inventory.parameters.name }}
+    subsystem: {{ inventory.parameters.subsystem }}
+  type: ClusterIP
