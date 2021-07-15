@@ -13,5 +13,3 @@ deployments/compiled/
 
 # Swagger doc
 foo.json
-
-CertificateAuthorityCertificate.pem
